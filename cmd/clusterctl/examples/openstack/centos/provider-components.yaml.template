@@ -207,7 +207,6 @@ data:
         KUBELET_KUBEADM_EXTRA_ARGS=--cgroup-driver=systemd
         EOF
         systemctl enable kubelet.service
-
         systemctl disable ufw 
 
         modprobe br_netfilter

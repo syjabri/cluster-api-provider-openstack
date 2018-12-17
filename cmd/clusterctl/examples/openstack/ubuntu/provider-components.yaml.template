@@ -249,7 +249,6 @@ data:
         EOF
         systemctl daemon-reload
         systemctl restart kubelet.service
-
         systemctl disable ufw 
 
         kubeadm join --ignore-preflight-errors=all --config /etc/kubernetes/kubeadm_config.yaml
