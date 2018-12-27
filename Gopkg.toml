@@ -31,14 +31,6 @@ required = [
 
 [[constraint]]
   branch = "master"
-<<<<<<< HEAD
-  name = "k8s.io/klog"
-
-
-[[constraint]]
-  branch = "master"
-=======
->>>>>>> 4a1305e6478fdcb98afbb2eb714c6f9594d881d0
   name = "github.com/gophercloud/gophercloud"
 
 [[constraint]]
