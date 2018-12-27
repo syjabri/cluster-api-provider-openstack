@@ -31,11 +31,14 @@ required = [
 
 [[constraint]]
   branch = "master"
+<<<<<<< HEAD
   name = "k8s.io/klog"
 
 
 [[constraint]]
   branch = "master"
+=======
+>>>>>>> 4a1305e6478fdcb98afbb2eb714c6f9594d881d0
   name = "github.com/gophercloud/gophercloud"
 
 [[constraint]]
@@ -47,14 +50,6 @@ required = [
   version = "0.8.0"
 
 [[constraint]]
-  name = "github.com/spf13/cobra"
-  version = "0.0.3"
-
-[[constraint]]
-  name = "github.com/spf13/pflag"
-  version = "1.0.3"
-
-[[constraint]]
   name = "k8s.io/api"
   version = "kubernetes-1.11.2"
 
@@ -63,16 +58,16 @@ required = [
   version = "kubernetes-1.11.2"
 
 [[constraint]]
-  branch = "master"
   name = "k8s.io/cluster-bootstrap"
+  branch = "master"
 
 [[constraint]]
   name = "k8s.io/klog"
   version = "0.1.0"
 
 [[constraint]]
-  branch = "master"
   name = "sigs.k8s.io/cluster-api"
+  version = "0.0.0-alpha.4"
 
 [[constraint]]
   name = "sigs.k8s.io/controller-runtime"
@@ -87,7 +82,7 @@ required = [
   unused-packages = true
   non-go = true
 
-  [[prune.project]]
-    name = "sigs.k8s.io/cluster-api"
-    unused-packages = false
-    non-go = false
+[[prune.project]]
+  name = "sigs.k8s.io/cluster-api"
+  unused-packages = false
+  non-go = false
